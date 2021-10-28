@@ -1,8 +1,7 @@
-# python
-import pygame
-pygame.init()
-dis=pygame.display.set_mode((400,300))
-pygame.display.update()
-pygame.quit()
-thaank you
 
+#!/bin/bash
+yum install httpd -y
+systemctl enable httpd
+mkdir /var/www/html/application1/
+echo "<h1>This is a testing page for app1</h1>" > /var/www/html/application1/index.html
+systemctl start httpd
